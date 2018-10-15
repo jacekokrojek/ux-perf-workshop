@@ -6,12 +6,12 @@ Connect to the server using ssh as 'ubuntu' user (password will be provided duri
 ## Starting tools
 Use `screen` utility to start following tools in the separate terminal or add -d flag to start them in the detached mode.
 * Start Webpagetest server and verify if server is available at http://\<your-ip-address\>
-`docker run -p 80:80 --rm webpagetest/server`
+```docker run -p 80:80 --rm webpagetest/server```
 * Start Webpagetest agent
-`docker run --p 4001:80 --network="host" -e "SERVER_URL=[http://localhost:80/work/](http://localhost:4000/work/)" -e "LOCATION=Test" -e "SHAPER=none" --cap-add="NET_ADMIN" webpagetest/agent`
+```docker run -p 4001:80 --network="host" -e "SERVER_URL=http://localhost:80/work/" -e "LOCATION=Test" -e "SHAPER=none" --cap-add="NET_ADMIN" webpagetest/agent```
 * Start Graphana/Graphite server
-`cd sidespeed`
-`docker-compose up`
+```cd sidespeed```
+```docker-compose up```
 
 
 ## Local environment preparation
