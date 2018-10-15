@@ -59,6 +59,7 @@ Use `screen` utility to start following tools in the separate terminal or add -d
 ### Resources
 * [Navigation Timing API](https://www.w3.org/TR/navigation-timing/#sec-window.performance-attribute)
 * [Resource Timing API](https://w3c.github.io/resource-timing/)
+* [domInteractive: is it? really?](https://www.stevesouders.com/blog/2015/08/07/dominteractive-is-it-really/)
 
 ### Samples
 * [DOMContentLoaded vs Load](http://practiqa.pl/DOMContentLoaded/index-ad.html)
