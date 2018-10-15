@@ -72,4 +72,4 @@ console.log('interactive: ' + interactive + 'ms, ' + 'dcl: ' + dcl + 'ms, comple
 ```
 ### Exercise 2
 1. Collect metrics sites you selected earlier and store results in [UX Performance Workshop](http://bit.ly/2yjfXJM) directory using Google Sheet
-2. Collect also time to domInteractive event.
+2. Collect also time to domInteractive event and find out when this event is triggered.
