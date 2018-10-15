@@ -38,5 +38,5 @@ You might execute `$ sudo modprobe ifb numifbs=1` command in order to make webpa
 `sudo npm install -g webpagetest`
 
 * Install Lighthouse node package
-`npm install -g lighthouse-cli`
+`npm install -g lighthouse`
 
