@@ -1,6 +1,6 @@
 # UX Performance Workshop
 
-1. [Preparation](part-1.md)
+1. [Preparation](part-1-preparation.md)
 
 ## Chapter 1. - Preparing for competitors analysis
 
