@@ -3,7 +3,7 @@
 ## Preparation
 
 ### Pre-configured environments
-Please open document [UX Performance Workshop - Vilnius 2018](http://bit.ly/2yjfXJM) and select on of the available servers. Put your name next IP address to mark that you are going to use this environment.
+Please open document [UX Performance Workshop - Vilnius 2018](https://docs.google.com/spreadsheets/d/1TmI4cHQAgsNtVySozQ7uVcY2WOJebensJgPgzq8Ecz4/edit?usp=sharing) and select on of the available servers. Put your name next IP address to mark that you are going to use this environment.
 Connect to the server using ssh as 'ubuntu' user (password will be provided during the workshop).
 ### Local environment preparation
 In order to use all tools presented during the workshop please install following software and execute commands stated below
