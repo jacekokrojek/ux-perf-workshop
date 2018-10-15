@@ -7,3 +7,5 @@
 2. Use webpagetest web to compare filmstrips and videos for selected pages
 3. Use webpagetest web to compare performance measured from different countries for one selected site/connection speed
 4. Use webpagetest command to get available locations and schedule test on test location using Native connectivity
+5. Use sitespeed.io to collect metrics and change name of the browser and number of test runs sitespeed.io and on webpagetest.
+6. Configure Compare Performance dashboard
