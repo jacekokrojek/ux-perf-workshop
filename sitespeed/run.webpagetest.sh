@@ -1,0 +1,17 @@
+#!/bin/bash
+# Specify the exact version of sitespeed.io. When you upgrade to the next version, pull it down and the chage the tag
+DOCKER_CONTAINER=sitespeed.io
+
+# Simplify some configurations
+CONFIG="--config /sitespeed.io/default.json"
+DOCKER_SETUP="--shm-size=1g --rm -v /home/ubuntu/sitespeed:/sitespeed.io -v /result:/result -v /etc/localtime:/etc/localtime:ro --name sitespeed"
+WEBPAGETEST_HOST=`curl http://169.254.169.254/latest/meta-data/public-ipv4`
+# Start running the tests
+# We run more tests on our test server but this gives you an idea of how you can configure it
+docker-compose run $DOCKER_CONTAINER -n 1 --browsertime.viewPort 1920x1080 --webpagetest.host $WEBPAGETEST_HOST --webpagetest.location Test --webpagetest.connectivity Native --webpagetest.runs 1 /sitespeed.io/urls.txt -b firefox $CONFIG
+
+# We remove all docker stuff to get a clean next run
+# docker system prune --all --volumes -f
+
+# Get the container so we have it the next time we wanna use it
+# docker pull $DOCKER_CONTAINER

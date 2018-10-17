@@ -19,30 +19,45 @@ cd sidespeed
 docker-compose up
 ```
 
-
 ## Local environment preparation
 In order to use all tools presented during the workshop please install following software and execute commands stated below
 * Install Docker
-For ubuntu you can use following instruction https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+For ubuntu you can use [How to Install and Use Docker on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) instruction.
 
 * Install Docker Compose
-For ubuntu you can use following instruction https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
+For Ubuntu you can use [How To Install Docker Compose on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04) instruction.
 
 * Pull Webpagetest docker images
-`$ docker pull webpagetest/server`
-`$ docker pull webpagetest/agent`
+```
+$ docker pull webpagetest/server
+$ docker pull webpagetest/agent
+```
 You might execute `$ sudo modprobe ifb numifbs=1` command in order to make webpage test agent working.
 
 * Pull Sidespeed.io docker images
-`$ docker pull sidespeedio/sidespeedio`
+```
+$ docker pull sidespeedio/sidespeedio
+```
 
 * Install mode and npm 
-`sudu apt get node`
-`sudu apt get npm`
+```
+sudu apt get node
+sudu apt get npm
+```
 
 * Install Webpagetest node package
-`sudo npm install -g webpagetest`
+```
+sudo npm install -g webpagetest
+````
 
 * Install Lighthouse node package
-`npm install -g lighthouse`
+```
+npm install -g lighthouse
+```
 
+* Edit corntab file by executing `crontab -e` and place there those lines
+````
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+*/10 * * * * <path-to-run.webpagetest.sh-file> >> /tmp/sitespeed.io.log 2>&1
+```

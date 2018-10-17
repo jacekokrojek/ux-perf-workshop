@@ -15,6 +15,6 @@ var interactive = t.domInteractive - t.navigationStart,
 console.log('interactive: ' + interactive + 'ms, ' + 'dcl: ' + dcl + 'ms, complete: ' + complete + 'ms');
 ```
 ### Exercise 2
-1. Collect metrics sites you selected earlier and store results in [UX Performance Workshop](http://bit.ly/2yjfXJM) directory using Google Sheet. You can use script in `protractor` and execute command `protractor conf.js --baseUrl <test-url>`
-2. Collect time to domInteractive event.
+1. Collect metrics sites you selected earlier and store results in [UX Performance Workshop](http://bit.ly/2yjfXJM) directory using Google Sheet. You can use script in `protractor` and execute command `protractor conf.js --baseUrl <test-url>`. You need to execute `npm install` command if you use your local environment.
+2. Modify the script and collect time to domInteractive event.
 
