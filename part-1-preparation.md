@@ -4,7 +4,7 @@ Please open document [UX Performance Workshop - Vilnius 2018](https://docs.googl
 Connect to the server using ssh as 'ubuntu' user (password will be provided during the workshop).
 
 ## Starting tools
-Use `screen` utility to start following tools in the separate terminal or add -d flag to start them in the detached mode.
+Use `screen` utility to execute each of the following commans in the separate terminal (you can read more about screen [here](https://opensource.com/article/17/3/introduction-gnu-screen) ) or add -d flag to start them in the detached mode.
 * Start Webpagetest server and verify if server is available at http://\<your-ip-address\>
 ```
 docker run -p 80:80 --rm webpagetest/server
