@@ -56,7 +56,7 @@ npm install -g lighthouse
 ```
 
 * Edit corntab file by executing `crontab -e` and place there those lines
-````
+```
 SHELL=/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 */10 * * * * <path-to-run.webpagetest.sh-file> >> /tmp/sitespeed.io.log 2>&1
